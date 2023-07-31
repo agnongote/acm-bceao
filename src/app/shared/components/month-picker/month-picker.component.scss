@@ -1,0 +1,15 @@
+.cal-item {
+	&:hover {
+		cursor: pointer;
+		background: hsl(var(--p) / 0.2);
+	}
+
+	&.active {
+		background: hsl(var(--p) / var(--tw-text-opacity));
+		color: #fff;
+	}
+}
+
+.card-header .btn.btn-ghost:hover {
+	background: hsl(var(--p) / 0.2);
+}

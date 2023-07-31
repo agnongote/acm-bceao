@@ -1,0 +1,8 @@
+<div class="flex flex-row items-center justify-between mx-auto w-full" #otpWrapper>
+    <div class="w-13 h-13 mx-1 sm:w-16 sm:h-16" *ngFor="let item of [].constructor(codeLength); let i = index">
+        <input id="inp-{{i}}" pattern="[0-9]+"
+            class="w-full h-full text-center px-2 outline-none rounded-md font-bold text-[2rem]  border-gray-200 border focus:ring-1 ring-primary"
+            type="text" maxLength="1">
+    </div>
+</div>
+

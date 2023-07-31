@@ -1,0 +1,30 @@
+<div class="card rounded-sm p-2 ">
+    <div class="card-header flex flex-row items-center justify-between mb-2">
+        <button class="btn btn-ghost py-2 !min-h-10 !h-10" (click)="onPreviousYear()"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+        </button>
+        <span class="font-semibold">{{currentYear}}</span>
+        <button class="btn btn-ghost py-2 !min-h-10 !h-10" (click)="onNextYear()"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
+    </div>
+    <div class="card-body grid grid-flow-dense gap-2 p-0" style="grid-template-columns: 1fr 1fr 1fr;">
+        <ng-container *ngFor="let _m of months">
+            <div class="cal-item bg-slate-100 dark:bg-base-300 rounded-sm text-center px-3 py-2"
+                [class.text-primary]="currentMonth == _m.fullLabel"
+                [class.active]="selectedMonth.includes(_m.number+_m.year)"
+                [class.bg-primary]="selectedMonth.includes(_m.number+_m.year)" (click)="handleClickAction(_m)">
+                {{_m.label}}</div>
+        </ng-container>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-error btn-outline py-2 !min-h-10 !h-10 w-full btn-sm mt-2 !text-sm hover:!text-white"
+            (click)="clear()">{{eraseLabel}}</button>
+    </div>
+</div>
