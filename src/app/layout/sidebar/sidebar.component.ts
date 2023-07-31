@@ -36,15 +36,18 @@ export class SidebarComponent {
       children: [
         {
           title: 'Gestion des données de référence',
-          icon: ``
+          icon: ``,
+          link: 'parametres/gestion-donnees-reference'
         },
         {
           title: 'Gestion des périodes',
-          icon: ``
+          icon: ``,
+          link: 'parametres/gestion-periode'
         },
         {
           title: 'Gestion des agrées de change manuel',
-          icon: ``
+          icon: ``,
+          link: 'parametres/gestion-agrees'
         },
         // Vous pouvez ajouter des sous-sous-menus ici...
       ]
@@ -68,15 +71,18 @@ export class SidebarComponent {
       children: [
         {
           title: 'Collecte des remises vai REPORTING',
-          icon: ``
+          icon: ``,
+          link: 'collecte/remises-reporting'
         },
         {
           title: 'Collecte des remises via chargement',
-          icon: ``
+          icon: ``,
+          link: 'collecte/remises-remise'
         },
         {
           title: 'Gestion des alertes',
-          icon: ``
+          icon: ``,
+          link: 'collecte/gestion-alertes'
         },
       ]
     },
@@ -97,11 +103,13 @@ export class SidebarComponent {
       children: [
         {
           title: 'Édition des états prédefinis',
-          icon: ``
+          icon: ``,
+          link: 'editions/etats'
         },
         {
           title: 'Extraction des données',
-          icon: ``
+          icon: ``,
+          link: 'editions/extraction'
         },
       ]
     },
