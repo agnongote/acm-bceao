@@ -26,23 +26,21 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.ico",‚
               "src/assets"
             ],
             "styles": [
               "src/styles.scss",
 
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/ladda/dist/ladda.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/jstree/dist/themes/default-dark/style.min.css"
             ],
             "scripts": [
-               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./src/assets/rsa/RSA.min.js",
               "node_modules/jstree/dist/jstree.js"
             ]
           },
